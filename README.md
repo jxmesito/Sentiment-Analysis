@@ -1,6 +1,10 @@
-# Sentiment Analysis Tool Using Cohere's Platform
+# Sentiment Analysis Tool
 
 This script analyzes customer reviews and determines their sentiment (positive, neutral, or negative) using Cohere's API. 
 
-<img src=ss.PNG>
+# Example Reviews:
 <img src=ss1.PNG>
+
+# Output:
+<img src=ss.PNG>
+
