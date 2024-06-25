@@ -28,8 +28,8 @@ def get_sentiment(text):
     response = requests.post(ENDPOINT, headers=headers, data=json.dumps(data))
     
     # print the status code and response (debug output)
-    print(f"Status Code: {response.status_code}")
-    print(f"Response: {response.text}")
+    # print(f"Status Code: {response.status_code}")
+    # print(f"Response: {response.text}")
     
     if response.status_code == 200:
         results = response.json().get('classifications', [])
@@ -45,7 +45,7 @@ def analyze_reviews(reviews):
     for review in reviews:
         sentiment = get_sentiment(review)
         # print each review's sentiment (debug)
-        print(f"Review: {review} -> Sentiment: {sentiment}") 
+        # print(f"Review: {review} -> Sentiment: {sentiment}") 
         if sentiment in sentiments:
             sentiments[sentiment] += 1
     return sentiments
